@@ -1,0 +1,7 @@
+Program ejemplo (input,output); //Tipo de archivo
+Uses crt; //Libreria para uso de monitor
+Var //Palabra reservada para definicion de variables
+
+Begin
+    //Contenido del programa pirncipal//
+End.
