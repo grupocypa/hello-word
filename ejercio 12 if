@@ -1,0 +1,28 @@
+Program ejercicio_12_if (input, output);
+Uses crt;
+Var
+   a,b,c,d,e,f,max:integer;
+Begin
+     writeln('Ingresa seis numeros enteros positivo cualesquieras: ');
+     write('Primero: ');readln(a);
+     write('Segundo: ');readln(b);
+     write('Tercero: ');readln(c);
+     write('Cuarto: ');readln(d);
+     write('Quinto: ');readln(e);
+     write('Sexto: ');readln(f);
+     if((a>b)and(a>c)and(a>d)and(a>e)and(a>f))then
+       max:=a
+     else if((b>a)and(b>c)and(b>d)and(b>e)and(b>f))then
+       max:=b
+     else if((c>a)and(c>b)and(c>d)and(c>e)and(c>f))then
+       max:=c
+     else if((d>a)and(d>b)and(d>c)and(d>e)and(d>f))then
+       max:=d
+     else if((e>a)and(e>b)and(e>c)and(e>d)and(e>f))then
+       max:=e
+     else
+       max:=f;
+     writeln();
+     writeln('El mayor de los seis es: ',max);
+     readkey;
+End.
