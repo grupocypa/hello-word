@@ -1,0 +1,56 @@
+//*************************************//
+//*** Rejon Francisco - Grupo CyPa  ***//
+//*** Algoritmos y EE de DD - 2020  ***//
+//*** contacto: grupocypa@gmail.com ***//
+//*************************************//
+//*** Se ingresan seis numeros en_  ***//
+//*** teros positivos y el algorit_ ***//
+//*** mo exhibe cual es el mayor de ***//
+//*** todos y en que lugar ingreso. ***//
+//*************************************//
+Program ejercicio_13_if (input, output);
+Uses crt;
+Var
+   a,b,c,d,e,f,max,pos:integer;
+Begin
+     writeln('Ingresa seis numeros enteros positivo cualesquieras: ');
+     write('Primero: ');readln(a);
+     write('Segundo: ');readln(b);
+     write('Tercero: ');readln(c);
+     write('Cuarto: ');readln(d);
+     write('Quinto: ');readln(e);
+     write('Sexto: ');readln(f);
+     if((a>b)and(a>c)and(a>d)and(a>e)and(a>f))then
+       begin
+            max:=a;
+            pos:=1;
+       end
+     else if((b>a)and(b>c)and(b>d)and(b>e)and(b>f))then
+       begin
+            max:=b;
+            pos:=2;
+       end
+     else if((c>a)and(c>b)and(c>d)and(c>e)and(c>f))then
+       begin
+            max:=c;
+            pos:=3;
+       end
+     else if((d>a)and(d>b)and(d>c)and(d>e)and(d>f))then
+       begin
+            max:=d;
+            pos:=4;
+       end
+     else if((e>a)and(e>b)and(e>c)and(e>d)and(e>f))then
+       begin
+            max:=e;
+            pos:=5;
+       end
+     else
+       begin
+            max:=f;
+            pos:=6;
+       end;
+     writeln();
+     writeln('El mayor de los seis es: ',max,' y fue engrgado en la poscision numero: ', pos);
+     readkey;
+End.
