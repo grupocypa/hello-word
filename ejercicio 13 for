@@ -1,0 +1,23 @@
+//*************************************//
+//*** Rejon Francisco - Grupo CyPa  ***//
+//*** Algoritmos y EE de DD - 2020  ***//
+//*** contacto: grupocypa@gmail.com ***//
+//*************************************//
+//*** Se ingresa un numero cual_    ***//
+//*** quiera para calcular su facto ***//
+//*** rial y ser exhibido.          ***//
+//*************************************//
+Program ejercicio_13_for (input, output);
+Uses crt;
+Var
+   acum,ls,a:integer;
+Begin
+     acum:=1;
+     writeln('Ingrese numero cualquiera para calcular su factorial: ');
+     write('Numero: ');readln(ls);
+     for a:= 1 to ls do
+         acum:=acum*a;
+     writeln();
+     writeln('El ',ls, '! es: ', acum);
+     readkey;
+End.
